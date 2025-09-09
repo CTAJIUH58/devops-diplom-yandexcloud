@@ -144,7 +144,7 @@ provider "yandex" {
 ```
 terraform init -backend-config="access_key=$S3_ACCESS_KEY" -backend-config="secret_key=$S3_SECRET_KEY"
 ```
-
+![backend_init](img/backend_init.png)
 
 Для проверки создаю манифест описывающий подсети в будующем проекте - [subnets.tf](https://github.com/CTAJIUH58/devops-diplom-yandexcloud/blob/main/infra/subnets.tf). Применяю изменения:
 
