@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diplom-web-app
+  namespace: default
+  labels:
+    app: diplom-web-app 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: diplom-web-app
+  template:
+    metadata:
+      labels:
+        app: diplom-web-app
+    spec:
+      containers:
+      - name: diplom-web-app
+        image: ctajiuh58/diplom-web-app:0.0.1
+        ports:
+        - containerPort: 80

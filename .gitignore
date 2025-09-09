@@ -1,3 +1,11 @@
+./kubespray-venv/**
+kubespray-venv
+kubespray
+./infra/.terraform/**
+./infra/*.lock.hcl
+./bucket/.terraform/**
+./bucket/*.lock.hcl
+./bucket/*.tfstate*
 .lock.hcl
 .tfstate
 .vagrant
