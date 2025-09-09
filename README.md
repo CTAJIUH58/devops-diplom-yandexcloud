@@ -259,7 +259,7 @@ EXPOSE 80
 Собираю приложение и отправляю в DockerHub:
 ```
 docker login -u ctajiuh58
-docker build -t ctajiuh58/nginx-test-app:1.0.0 ./
+docker build -t ctajiuh58/diplom-web-app:1.0.0 ./
 docker push ctajiuh58/diplom-web-app:0.0.1
 ```
 
